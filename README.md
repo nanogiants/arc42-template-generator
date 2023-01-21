@@ -8,21 +8,21 @@
 This script automates the process of creating an arc42 template that can be used for importing into Confluence. The arc42 template is a standard template for software architecture documentation and provides a consistent structure for documenting the architecture of a software system. This script creates a template that includes all the necessary boilerplate to get started.
 
 ## How to use
-- Make script executable by running the following command: chmod +x create.sh
-- Run the script by using the command ./create.sh
+- Make script executable by running the following command: `chmod +x create.sh`
+- Run the script by using the command `./create.sh`
 - When prompted, provide the name of the project.
 
-The script will create an output directory with the timestamp and the given project name. The script will replace all occurrences of the string "HAFWUEARC42" with the uppercase version of the project name and "hafwuearc42" with the lowercase version of the project name in the files entities.xml and exportDescriptor.properties. The script will copy the directory named "./template/attachments" recursively to the output directory. The script will create a zip file with the name $input-$now.zip in the current directory.
+The script will create an output directory with the timestamp and the given project name. The script will replace all occurrences of the string `HAFWUEARC42` with the uppercase version of the project name and `hafwuearc42` with the lowercase version of the project name in the files entities.xml and exportDescriptor.properties. The script will copy the directory named `./template/attachments` recursively to the output directory. The script will create a zip file with the name `$input-$now.zip` in the current directory.
 
 ### Note
-- The script assumes that the "template" directory, containing the necessary files and directories, is located in the same directory as the script.
+- The script assumes that the `template` directory, containing the necessary files and directories, is located in the same directory as the script.
 - The script will overwrite files with the same name in the output directory if they already exist.
 - The script is tested on macOS, on other systems, the script may need adjustments.
 
 ## Contributing
 <!-- section: Contributing -->
 <!-- Describe what action one should take in order to contribute. Does a certain styleguide has to be adhered. How can one apply changes (i.e. push vs. pull request)? -->
-Bug reports and pull requests are welcome on GitHub at {URL}. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/nanogiants/arc42-template-generator/issues. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
 
 ## License
 <!-- section: License -->
