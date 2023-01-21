@@ -23,5 +23,8 @@ sed -i "" "s/hafwuearc42/$lowercasedInput/g" "$output/exportDescriptor.propertie
 
 cp -r ./template/attachments $output
 
-zip -r $zipname $output
+cd $output
+zip -r ../$zipname .
+
+cd ..
 rm -rf $output
